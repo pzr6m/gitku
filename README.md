@@ -14,7 +14,7 @@ Every repository is full of sentences that happen to scan as 5-7-5: a frustrated
 ## Install
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/gitku && cd gitku
+git clone https://github.com/pzr6m/gitku && cd gitku
 pip install .             # no runtime dependencies
 pip install ".[accurate]" # optional: use the CMU Pronouncing Dictionary for better syllable counts
 ```
