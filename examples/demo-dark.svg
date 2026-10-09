@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="637" height="1306" viewBox="0 0 637 1306" role="img" aria-label="gitku · gitku-demo">
+<title>gitku · gitku-demo</title>
+<rect width="100%" height="100%" fill="#101216"/>
+<text x="24" y="42" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#e08a6d">gitku · gitku-demo</text>
+<rect x="24" y="64" width="589" height="188" rx="12" fill="#1a1d23" stroke="#2a2e37"/>
+<text x="56" y="116" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">stop the retry loop</text>
+<text x="56" y="150" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">before it eats the whole queue</text>
+<text x="56" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">or we all lose sleep</text>
+<text x="56" y="232" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12" fill="#8b909a">— Linus Example · 89cab80 · 2025-03-06 · commit</text>
+<rect x="24" y="270" width="589" height="188" rx="12" fill="#1a1d23" stroke="#2a2e37"/>
+<text x="56" y="322" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">the build is broken</text>
+<text x="56" y="356" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">nobody touched the config</text>
+<text x="56" y="390" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">and yet here we are</text>
+<text x="56" y="438" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12" fill="#8b909a">— Ada Lovelace · ab36fea · 2025-03-04 · commit</text>
+<rect x="24" y="476" width="589" height="188" rx="12" fill="#1a1d23" stroke="#2a2e37"/>
+<text x="56" y="528" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">never trust the cache</text>
+<text x="56" y="562" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">it lies to you when you least</text>
+<text x="56" y="596" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">expect it again</text>
+<text x="56" y="644" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12" fill="#8b909a">— Grace Hopper · 352f699 · 2025-03-14 · code comment at cache.py:4</text>
+<rect x="24" y="682" width="589" height="188" rx="12" fill="#1a1d23" stroke="#2a2e37"/>
+<text x="56" y="734" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">the old cache is gone</text>
+<text x="56" y="768" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">we cleared it out of our disks</text>
+<text x="56" y="802" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">space returns to us</text>
+<text x="56" y="850" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12" fill="#8b909a">— Ada Lovelace · 1892f93 · 2025-03-05 · commit · intentional</text>
+<rect x="24" y="888" width="589" height="188" rx="12" fill="#1a1d23" stroke="#2a2e37"/>
+<text x="56" y="940" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">friday deploy fails</text>
+<text x="56" y="974" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">tests were green but prod was not</text>
+<text x="56" y="1008" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">rollback and breathe deep</text>
+<text x="56" y="1056" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12" fill="#8b909a">— Ada Lovelace · 2391d79 · 2025-03-10 · commit · intentional</text>
+<rect x="24" y="1094" width="589" height="188" rx="12" fill="#1a1d23" stroke="#2a2e37"/>
+<text x="56" y="1146" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">quiet morning light</text>
+<text x="56" y="1180" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">settles on the sleeping town</text>
+<text x="56" y="1214" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#ebe8e2">coffee warms my hands</text>
+<text x="56" y="1262" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12" fill="#8b909a">— Grace Hopper · 352f699 · 2025-03-14 · docs at README.md:3 · intentional</text>
+</svg>
