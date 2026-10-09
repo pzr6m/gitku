@@ -26,6 +26,7 @@ dev = ["pytest>=7"]
 
 [project.scripts]
 gitku = "gitku.cli:main"
+gitku-hook = "gitku.hook:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -25,3 +25,8 @@ jobs:
         run: |
           pip install -e ".[accurate]"
           pytest -q
+      - name: Website engine tests
+        if: matrix.python-version == '3.12'
+        run: |
+          node --test tests/web/gitku.test.mjs
+          python scripts/sync_overrides.py --check

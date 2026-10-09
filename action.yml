@@ -1,0 +1,51 @@
+name: "gitku"
+description: "Find the accidental haiku hiding in your repository and post them to the job summary."
+author: "pzr6m"
+branding:
+  icon: feather
+  color: red
+inputs:
+  path:
+    description: "Repository path to scan"
+    default: "."
+  limit:
+    description: "How many haiku to show (0 for all)"
+    default: "10"
+  loose:
+    description: "Also look inside longer text (true/false)"
+    default: "false"
+  sources:
+    description: "Comma-separated: commits,comments,docs"
+    default: "commits,comments,docs"
+  python-version:
+    description: "Python version to run gitku with"
+    default: "3.12"
+outputs:
+  count:
+    description: "Number of haiku found (within the limit)"
+    value: ${{ steps.scan.outputs.count }}
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: ${{ inputs.python-version }}
+    - name: Install gitku
+      shell: bash
+      run: pip install "${{ github.action_path }}"
+    - name: Scan
+      id: scan
+      shell: bash
+      env:
+        GITKU_PATH: ${{ inputs.path }}
+        GITKU_LIMIT: ${{ inputs.limit }}
+        GITKU_LOOSE: ${{ inputs.loose }}
+        GITKU_SOURCES: ${{ inputs.sources }}
+      run: |
+        args=(--sources "$GITKU_SOURCES" -n "$GITKU_LIMIT")
+        if [ "$GITKU_LOOSE" = "true" ]; then args+=(--loose); fi
+        gitku "$GITKU_PATH" "${args[@]}" --format markdown -o gitku-poems.md
+        gitku "$GITKU_PATH" "${args[@]}" --format json -o gitku-poems.json
+        count=$(python -c 'import json;d=json.load(open("gitku-poems.json"));print(len(d["poems"]) if isinstance(d,dict) else len(d))')
+        echo "count=$count" >> "$GITHUB_OUTPUT"
+        { echo "## gitku: accidental haiku"; echo; cat gitku-poems.md; } >> "$GITHUB_STEP_SUMMARY"

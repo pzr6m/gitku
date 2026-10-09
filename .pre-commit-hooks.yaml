@@ -1,0 +1,7 @@
+- id: gitku
+  name: gitku (haiku check, never fails)
+  description: Prints any accidental haiku in the commit message you are about to make.
+  entry: gitku-hook
+  language: python
+  stages: [commit-msg]
+  always_run: true

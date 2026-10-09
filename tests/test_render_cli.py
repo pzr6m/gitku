@@ -139,3 +139,19 @@ def test_cli_version(capsys):
         main(["--version"])
     assert exc.value.code == 0
     assert "gitku 0.1.0" in capsys.readouterr().out
+
+
+def test_commit_msg_hook_celebrates_a_haiku_and_never_fails(tmp_path, capsys):
+    from gitku.hook import main
+
+    haiku = tmp_path / "MSG"
+    haiku.write_text("the build is broken nobody touched the config and yet here we are\n# a comment\n")
+    assert main([str(haiku)]) == 0
+    assert "that commit message is a haiku" in capsys.readouterr().out
+
+    boring = tmp_path / "MSG2"
+    boring.write_text("update dependencies\n")
+    assert main([str(boring)]) == 0
+    assert capsys.readouterr().out == ""
+    assert main([str(tmp_path / "missing")]) == 0
+    assert main([]) == 0
