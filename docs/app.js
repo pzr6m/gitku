@@ -293,7 +293,7 @@
       if (token === state.running) setStatus("info", "Reading " + repo + "…", "Counting syllables in commit messages", f);
     }).then(function (commits) {
       if (token !== state.running) return;
-      var res = Gitku.scanCommits(commits, { loose: loose });
+      var res = Gitku.scanCommits(commits, { loose: loose, minScore: loose ? 0.7 : 0.5 });
       clearStatus();
       showResults(repo, res.poems, res.commits);
       var r = $("results");
